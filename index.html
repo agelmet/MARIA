@@ -309,11 +309,10 @@
             display: grid; 
             grid-template-columns: 1fr 1fr; /* SYMMETRICAL LAYOUT */
             gap: clamp(40px, 6vw, 100px); 
-            align-items: start;
+            align-items: center; /* PERFECTLY CENTERED SYMMETRY */
         }
         .about-image-wrap { 
-            position: sticky; /* STICKY EFFECT ON SCROLL */
-            top: 120px;
+            position: relative;
         }
         .about-image-frame {
             position: relative; overflow: hidden;
@@ -344,28 +343,6 @@
             padding: 24px 0 24px 24px;
             border-left: 2px solid var(--dusty-pink); margin: 2rem 0;
         }
-
-        /* EDUCATION */
-        .education {
-            padding: clamp(60px, 10vw, 120px) 0;
-            background: var(--beige);
-        }
-        .education-inner {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: clamp(40px, 6vw, 80px); align-items: center;
-        }
-        .education-text p {
-            font-size: 0.95rem; font-weight: 300; line-height: 1.85;
-            color: var(--warm-gray); margin-bottom: 1.5rem;
-        }
-        .education-image {
-            overflow: hidden; max-width: 100%;
-        }
-        .education-image img {
-            width: 100%; height: auto; object-fit: cover;
-            transition: transform 6s ease;
-        }
-        .education-image:hover img { transform: scale(1.03); }
 
         /* SERVICES */
         .services {
@@ -416,6 +393,28 @@
             padding: 6px 14px; border: 1px solid rgba(248, 244, 238, 0.12);
             color: rgba(248, 244, 238, 0.5);
         }
+
+        /* EDUCATION */
+        .education {
+            padding: clamp(60px, 10vw, 120px) 0;
+            background: var(--beige);
+        }
+        .education-inner {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: clamp(40px, 6vw, 80px); align-items: center;
+        }
+        .education-text p {
+            font-size: 0.95rem; font-weight: 300; line-height: 1.85;
+            color: var(--warm-gray); margin-bottom: 1.5rem;
+        }
+        .education-image {
+            overflow: hidden; max-width: 100%;
+        }
+        .education-image img {
+            width: 100%; height: auto; object-fit: cover;
+            transition: transform 6s ease;
+        }
+        .education-image:hover img { transform: scale(1.03); }
 
         /* FIRST SESSION - UPDATED SYMMETRICAL ANIMATED LAYOUT */
         .first-session {
@@ -573,7 +572,7 @@
         .space-header { text-align: center; max-width: 600px; margin: 0 auto 50px; }
         .space-header p { font-size: 0.9rem; font-weight: 300; line-height: 1.7; color: rgba(248, 244, 238, 0.5); }
         .gallery-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
         }
         .gallery-item {
             position: relative; overflow: hidden; cursor: pointer;
@@ -904,7 +903,7 @@
             <div class="about-inner">
                 <div class="about-image-wrap reveal">
                     <div class="about-image-frame">
-                        <img src="https://raw.githubusercontent.com/agelmet/MADIAM/refs/heads/main/unnamed-5.jpg" alt="Διαμαντοπούλου Μαρία">
+                        <img src="https://raw.githubusercontent.com/agelmet/MARIA/refs/heads/main/image002005.JPG" alt="Διαμαντοπούλου Μαρία">
                     </div>
                     <div class="about-image-accent"></div>
                 </div>
@@ -918,26 +917,6 @@
                     </blockquote>
                     <p class="reveal reveal-delay-3">Η σύνδεση σώματος και νου αναγνωρίζεται από τις νευροεπιστήμες ως κρίσιμη για την ψυχική υγεία. Πολύ συχνά ο σύγχρονος άνθρωπος έχει μάθει να ζει κυρίως στο νου του. Η επεξεργασία όμως των τραυμάτων και των συναισθημάτων απαιτεί μία σύνδεση που είναι και ψυχική και σωματική.</p>
                     <p class="reveal reveal-delay-3">Η θεραπεία γίνεται σε ασφαλές και υποστηρικτικό πλαίσιο, προσαρμοσμένη στο ρυθμό και τις ανάγκες του κάθε ατόμου. Με επίκεντρο τον διάλογο, την παρουσία και τη ρύθμιση του νευρικού συστήματος, ενεργοποιούμε μαζί βιώσιμες συνθήκες αλλαγής.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="education" id="education">
-        <div class="container">
-            <div class="education-inner">
-                <div class="education-text">
-                    <div class="section-label reveal">Η Πορεία & η Εκπαίδευσή μου</div>
-                    <h2 class="section-title reveal reveal-delay-1">Εκπαίδευση <em>& Εμπειρία</em></h2>
-                    <p class="reveal reveal-delay-2">Η κλινική μου πορεία βασίζεται σε συνδυασμό ψυχολογικής, νευροψυχολογικής και σωματικής ψυχοθεραπευτικής εκπαίδευσης. Είμαι απόφοιτη Ψυχολογίας (BSc, University of East London) και κάτοχος μεταπτυχιακού τίτλου στην Κλινική Γνωστική Νευροψυχολογία (MSc, University of Strasbourg), ενώ επιμορφώνομαι διαρκώς στη Σωματική Ψυχαναλυτική Ψυχοθεραπεία στο Κέντρο «Βίλχελμ Ράιχ».</p>
-                    <p class="reveal reveal-delay-2">Στην κλινική μου εμπειρία περιλαμβάνεται η εργασία σε δομές ψυχικής υγείας και η παροχή ψυχολογικής υποστήριξης σε άτομα με σύνθετες ψυχιατρικές και νευροψυχολογικές δυσκολίες, καθώς και η διενέργεια νευροψυχολογικών αξιολογήσεων και εξατομικευμένων παρεμβάσεων.</p>
-                    <p class="reveal reveal-delay-3">Σήμερα, διατηρώ ιδιωτικό γραφείο, όπου εργάζομαι με ενήλικες, προσφέροντας δια ζώσης και online συνεδρίες. Στόχος μου είναι να δημιουργείται ένας χώρος όπου το άτομο μπορεί να κατανοήσει βαθύτερα τον εαυτό του — όχι μόνο σε επίπεδο σκέψης, αλλά και σε επίπεδο σώματος και βιώματος.</p>
-                    <blockquote class="about-quote reveal reveal-delay-3">
-                        Εκεί όπου η κατανόηση συναντά την εμπειρία, και η αλλαγή δεν είναι απλώς κάτι που εξηγείται, αλλά κάτι που πραγματικά βιώνεται και ενσωματώνεται.
-                    </blockquote>
-                </div>
-                <div class="education-image reveal reveal-delay-2">
-                    <img src="https://raw.githubusercontent.com/agelmet/MADIAM/refs/heads/main/a6ed600a-8205-4286-81ec-3c00b08f16b8.jpg" alt="Διαμαντοπούλου Μαρία">
                 </div>
             </div>
         </div>
@@ -1011,6 +990,26 @@
                     <span class="service-tag" style="border-color:rgba(248, 244, 238, 0.18);color:rgba(248, 244, 238, 0.6);">Τραυματικές εμπειρίες</span>
                     <span class="service-tag" style="border-color:rgba(248, 244, 238, 0.18);color:rgba(248, 244, 238, 0.6);">Συναισθηματική απορρύθμιση</span>
                     <span class="service-tag" style="border-color:rgba(248, 244, 238, 0.18);color:rgba(248, 244, 238, 0.6);">Χαμηλή αυτοεκτίμηση</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <div class="container">
+            <div class="education-inner">
+                <div class="education-text">
+                    <div class="section-label reveal">Η Πορεία & η Εκπαίδευσή μου</div>
+                    <h2 class="section-title reveal reveal-delay-1">Εκπαίδευση <em>& Εμπειρία</em></h2>
+                    <p class="reveal reveal-delay-2">Η κλινική μου πορεία βασίζεται σε συνδυασμό ψυχολογικής, νευροψυχολογικής και σωματικής ψυχοθεραπευτικής εκπαίδευσης. Είμαι απόφοιτη Ψυχολογίας (BSc, University of East London) και κάτοχος μεταπτυχιακού τίτλου στην Κλινική Γνωστική Νευροψυχολογία (MSc, University of Strasbourg), ενώ επιμορφώνομαι διαρκώς στη Σωματική Ψυχαναλυτική Ψυχοθεραπεία στο Κέντρο «Βίλχελμ Ράιχ».</p>
+                    <p class="reveal reveal-delay-2">Στην κλινική μου εμπειρία περιλαμβάνεται η εργασία σε δομές ψυχικής υγείας και η παροχή ψυχολογικής υποστήριξης σε άτομα με σύνθετες ψυχιατρικές και νευροψυχολογικές δυσκολίες, καθώς και η διενέργεια νευροψυχολογικών αξιολογήσεων και εξατομικευμένων παρεμβάσεων.</p>
+                    <p class="reveal reveal-delay-3">Σήμερα, διατηρώ ιδιωτικό γραφείο, όπου εργάζομαι με ενήλικες, προσφέροντας δια ζώσης και online συνεδρίες. Στόχος μου είναι να δημιουργείται ένας χώρος όπου το άτομο μπορεί να κατανοήσει βαθύτερα τον εαυτό του — όχι μόνο σε επίπεδο σκέψης, αλλά και σε επίπεδο σώματος και βιώματος.</p>
+                    <blockquote class="about-quote reveal reveal-delay-3">
+                        Εκεί όπου η κατανόηση συναντά την εμπειρία, και η αλλαγή δεν είναι απλώς κάτι που εξηγείται, αλλά κάτι που πραγματικά βιώνεται και ενσωματώνεται.
+                    </blockquote>
+                </div>
+                <div class="education-image reveal reveal-delay-2">
+                    <img src="https://raw.githubusercontent.com/agelmet/MARIA/refs/heads/main/image0002302.JPG" alt="Διαμαντοπούλου Μαρία">
                 </div>
             </div>
         </div>
@@ -1106,13 +1105,31 @@
                     </div>
                 </div>
                 <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(this)">
-                    <img src="https://raw.githubusercontent.com/agelmet/MADIAM/refs/heads/main/75bc05b4-4d69-4456-9707-62bae5b6f4c2.jpg" alt="Χώρος 4">
+                    <img src="https://raw.githubusercontent.com/agelmet/MADIAM/refs/heads/main/415cd2bd-06fd-4c0a-b47a-b299904a4de8.jpg" alt="Χώρος 4">
                     <div class="gallery-overlay">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6m7 0-7 7"/></svg>
                     </div>
                 </div>
                 <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(this)">
-                    <img src="https://raw.githubusercontent.com/agelmet/MADIAM/refs/heads/main/415cd2bd-06fd-4c0a-b47a-b299904a4de8.jpg" alt="Χώρος 5">
+                    <img src="https://raw.githubusercontent.com/agelmet/MARIA/refs/heads/main/image0002304.jpg" alt="Χώρος 5">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6m7 0-7 7"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/agelmet/MARIA/refs/heads/main/image0003203.jpg" alt="Χώρος 6">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6m7 0-7 7"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/agelmet/MARIA/refs/heads/main/image0032001.jpg" alt="Χώρος 7">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6m7 0-7 7"/></svg>
+                    </div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/agelmet/MARIA/refs/heads/main/image002006.JPG" alt="Χώρος 8">
                     <div class="gallery-overlay">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M14 10l7-7M9 21H3v-6m7 0-7 7"/></svg>
                     </div>
